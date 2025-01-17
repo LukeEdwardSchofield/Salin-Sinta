@@ -1,0 +1,270 @@
+/* font-family: "Alfa Slab One", serif; */
+/* font-family: "Jersey 10", serif; */
+/* font-family: "Roboto Condensed", serif; */
+/* font-family: "Montserrat", serif; */
+/* Overlay to gray out the background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.tama, .mali {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    overflow: visible;
+    padding: 2vw;
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 40px;
+    z-index: 20;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tama-magpatuloy-button, .mali-magpatuloy-button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* -------------------TAMA MODAL------------------------ */
+.tama img{
+    object-fit: contain;
+    width: 23vw;
+}
+
+
+#description-tama{
+    font-family: "Jersey 10", serif;
+    font-size: 8vw;
+    color: black;
+}
+
+.container-1 p:nth-child(2){
+    font-family: "Jersey 10", serif;
+    font-size: 3vw; 
+    margin-bottom: 10vh;
+}
+
+#tama-magpatuloy{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 22vw;
+    height: 12vh;
+}
+
+.magpatuloy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22vw;
+    height: 10vh;
+    background-color: #ddba01;
+    border-radius: 0vw 2vw 2vw 0vw;
+    transition: 0.5s ease;
+}
+
+.magpatuloy:hover{
+    width: 24vw;
+}
+
+ .magpatuloy p{
+    font-family: "Jersey 10", serif;
+    font-size: 3.2vw;
+ }
+
+ .magpatuloy div:nth-child(2){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(3){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ } 
+
+ .magpatuloy div:nth-child(4){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(5){
+    height: 8vh;
+    margin: 2px;
+    
+    border-top: 40px solid transparent; /* Transparent top border */
+    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 40px solid transparent; /* Transparent bottom border */
+}
+/* -------------------TAMA MODAL------------------------ */
+
+
+/* -------------------MALI MODAL------------------------ */
+
+.mali img {
+    object-fit: contain;
+    width: 23vw;
+}
+
+#description-mali{
+    font-family: "Jersey 10", serif;
+    font-size: 8vw;
+}
+
+.explanations{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    margin-bottom: 10vh;
+}
+
+.explanations p:nth-child(1){
+    font-size: 2vw;
+    color: #5a2805;
+}
+
+.explanations p{
+    margin: 1vw;
+}
+
+#mali-magpatuloy{
+    position: absolute;
+    right: 12%;
+    bottom: 5%;
+}
+
+.magpatuloy div:nth-child(2){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(3){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ } 
+
+ .magpatuloy div:nth-child(4){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(5){
+    height: 8vh;
+    margin: 2px;
+    
+    border-top: 40px solid transparent; /* Transparent top border */
+    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 40px solid transparent; /* Transparent bottom border */
+}
+
+/* -------------------TAMA MODAL------------------------ */
+
+
+
+
+
+
+
+
+
+
+.sub-menu{
+    display: flex;
+    flex-direction: column;
+ align-items: center;
+}
+
+.game-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14vh;
+    border: 0.4vw solid #5b1c14;
+    background-color: #ddba01;
+    border-radius: 1vw;
+    width: 80vw;
+    height: 50vh;
+}
+
+#phrase{
+    font-family: "Roboto Condensed", serif;
+    color: #5b1c14;
+    font-size: 3vw;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+
+#timer{
+    margin-bottom: 12vh;
+    font-family: "Roboto Condensed", serif;
+    color: black;
+    font-size: 3vw;
+}
+
+#translation{
+    font-size: 30px;
+    font-family: "Roboto Condensed", serif;
+
+    position: absolute;
+    right: 11%;
+    bottom: 38%;
+    border: none;
+    padding: 2vw;
+    background-color: white;
+    width: 78vw;
+    height: 12vh;
+    border-radius: 1vw;
+}
+
+.done-button{
+    display: block;
+    margin-top: 10vw;
+    width: 40vw;
+    height: 10vh;
+    font-family: "Jersey 10", serif;
+    background-color: #ddba01;
+    font-size: 5vw;
+    transition: 0.5s ease;
+}
+
+.done-button:hover{
+    width: 42vw;
+    height: 12vh;
+}
+
+.next-button{
+    display: none;
+    margin-top: 10vw;
+    width: 40vw;
+    height: 10vh;
+    font-family: "Jersey 10", serif;
+    background-color: #ddba01;
+    font-size: 5vw;
+}
+
+
+
+

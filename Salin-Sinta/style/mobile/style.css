@@ -1,0 +1,157 @@
+@media (max-width: 800px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+  #main-menu {
+    background-image: url(../../asset/img/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .main-menu-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18vh;
+    margin-bottom: 4vh;
+  }
+
+    .main-menu-logo p{
+        font-family: "Jersey 10", serif;
+        font-size: 26vw;
+        color: #5b1c14;
+        font-style: normal;
+        border: white;
+        color: #5b1c14;
+        text-shadow: 
+        2px 2px 0 white, 
+        -4px 4px 0 white, 
+        4px -4px 0 white, 
+        -4px -4px 0 white;
+  }
+
+
+  .main-menu-logo img{
+    object-fit: contain;
+    width: 18vw;
+  }
+
+  .menu-button{
+    display: flex;
+    text-decoration: none;
+
+  }
+
+  #matuto, #maglaro{
+    width: 60vw;
+    height: 8vh;
+    color: white;
+    border: 3px solid white;
+    border-radius: 3vw;
+    font-family: "Alfa Slab One", serif;
+    font-size: 7vw;
+  }
+
+  #matuto{
+    margin-bottom: 4vh;
+    background-color: #212020;
+}
+
+    #maglaro{
+        background-color: #5b1c14;
+    }
+
+
+
+  /* #main-menu{
+        background-image: url(../../asset/img/background.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .main-menu-logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        margin-top: 200px;
+    }
+    
+    .main-menu-logo p{
+        font-family: "Jersey 10", serif;
+        font-weight: 400;
+        font-size: 2vw;
+        font-style: normal;
+        border: white;
+        color: #5b1c14;
+        text-shadow: 
+        8px 8px 0 white, 
+        -8px 8px 0 white, 
+        8px -8px 0 white, 
+        -8px -8px 0 white; /* Creates the border effect }*/
+
+  /* .main-menu-logo p:nth-child(1){
+        margin-left: 60px;
+    }
+    
+    .main-menu-logo img{
+        margin-top: 50px;
+        object-fit: contain;
+        width: 180px;
+    }
+    
+    .menu-buttons{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 300px;
+    }
+    
+    
+    .menu-button button{
+    width: 260px;
+    height: 90px;
+    margin: 10px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 4px solid white;
+    color: white;
+    transition: ease 0.5s;
+    }
+    
+    .menu-button button:hover{
+        width: 280px;
+        height: 90px;
+    }
+    
+    #matuto{
+        background-color: #212020;
+    }
+    
+    #maglaro{
+        background-color: #5b1c14;
+    } */
+}

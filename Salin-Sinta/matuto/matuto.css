@@ -1,0 +1,144 @@
+/* font-family: "Alfa Slab One", serif; */
+/* font-family: "Jersey 10", serif; */
+/* font-family: "Roboto Condensed", serif; */
+/* font-family: "Montserrat", serif; */
+
+
+html, body {
+/* Ensure full height */
+    overflow: none; /* Enable scrolling */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.bumalik-button{
+    position: absolute;
+    left: 0%;
+}
+
+.bumalik{
+    width: 18vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    background-color: #ddba01;
+    border: 4px solid black;
+    border-radius: 2vw 0vw 0vw 2vw; 
+}
+
+.bumalik-button p{
+    position: absolute;
+    left: 60%;
+    font-family: "Jersey 10", serif;
+    font-size: 4vw;
+    text-align: center;
+    color: #5b1c14;
+}
+
+.bumalik div:nth-child(4){
+    width: 1vw;
+    height: 6vh;
+    margin-right: 10vw;
+    background-color: #5b1c14;
+}
+
+.bumalik div:nth-child(3){
+    width: 1vw;
+    height: 6vh;
+    margin-right: 0.3vw;
+    background-color: #5b1c14;
+}
+
+.bumalik div:nth-child(2){
+    width: 1vw;
+    height: 6vh;
+    margin-right: 0.3vw;
+    background-color: #5b1c14;
+}
+
+.bumalik div:nth-child(1){
+    height: 8vh;
+    margin-right: 0.6vw;
+    margin-left: 2vw;
+    border-top: 2vw solid transparent; /* Transparent top border */
+    border-right: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 2vw solid transparent; /* Transparent bottom border */
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+    height: auto;
+    width: 80vw;
+    background-color: white;
+    border-radius: 0.8vw;
+    padding: 2vw;
+}
+
+.tagalog-examples{
+    display: flex;
+    flex-direction: column;
+}
+
+.english-examples{
+    display: none;
+    flex-direction: column;
+}
+
+
+.technique{
+    font-family: "Alfa Slab One", serif;    
+    color: #5b1c14;
+    font-size: 2vw;
+}
+
+.definition{
+    border: 1px solid #5b1c14;
+    border-radius: 1vw;
+    background-color: #fff8d6;
+    padding: 2vw;
+}
+
+.definition p{
+    font-family: "Alfa Slab One", serif;    
+    color: #5b1c14;
+    font-size: 1vw;
+}
+
+.definition li{
+    font-family: "Roboto Condensed", serif;
+}
+
+.modals{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 2vh;
+margin-bottom: 2vh;
+}
+
+.modals button{
+    width: 30vw;
+    height: 5vh;
+    font-size: 2vw;
+    font-family: "Jersey 10", serif;
+    border: 3px solid #5b1c14;
+    border-radius: 1vw;
+    background-color: #ddba01;
+    transition: 0.5s ease;
+}
+
+.modals button:hover{
+    width: 32vw;
+    height: 6vh;
+}
+

@@ -1,0 +1,246 @@
+@media (min-width: 801px) {
+    
+
+
+body {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Overlay to gray out the background */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.tama, .mali {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    overflow: visible;
+    padding: 2vw;
+    width: 60vw;
+    height: 60vh;
+    background-color: white;
+    border-radius: 40px;
+    z-index: 20;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------TAMA MODAL------------------------ */
+#description-tama{
+    font-family: "Jersey 10", serif;
+    font-size: 8vw;
+    color: black;
+}
+
+.container-1 p:nth-child(2){
+    font-family: "Jersey 10", serif;
+    font-size: 3vw; 
+    margin-bottom: 10vh;
+}
+
+#tama-magpatuloy{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 22vw;
+    height: 12vh;
+    transition: 0.5s ease;
+}
+
+#tama-magpatuloy:hover{
+    width: 24vw;
+}
+
+.magpatuloy{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 22vw;
+    height: 10vh;
+    background-color: #ddba01;
+    border-radius: 0vw 2vw 2vw 0vw;
+    transition: 0.5s ease;
+}
+
+.magpatuloy:hover{
+    width: 24vw;
+}
+
+
+ .magpatuloy p{
+    font-family: "Jersey 10", serif;
+    font-size: 3.2vw;
+ }
+
+ .magpatuloy div:nth-child(2){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(3){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ } 
+
+ .magpatuloy div:nth-child(4){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(5){
+    height: 8vh;
+    margin: 2px;
+    
+    border-top: 40px solid transparent; /* Transparent top border */
+    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 40px solid transparent; /* Transparent bottom border */
+}
+/* -------------------TAMA MODAL------------------------ */
+
+
+/* -------------------MALI MODAL------------------------ */
+
+#description-mali{
+    font-family: "Jersey 10", serif;
+    font-size: 8vw;
+}
+
+.explanations{
+    font-family: "Montserrat", serif;
+    font-weight: 600;
+    margin-bottom: 10vh;
+}
+
+#mali-magpatuloy{
+    position: absolute;
+    right: 12%;
+    bottom: 5%;
+}
+
+
+
+.magpatuloy div:nth-child(2){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(3){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ } 
+
+ .magpatuloy div:nth-child(4){
+    width: 2vw;
+    height: 5vh;
+    background-color: #5b1c14;
+    margin: 0.3vw;
+ }
+
+ .magpatuloy div:nth-child(5){
+    height: 8vh;
+    margin: 2px;
+    
+    border-top: 40px solid transparent; /* Transparent top border */
+    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 40px solid transparent; /* Transparent bottom border */
+}
+
+/* -------------------TAMA MODAL------------------------ */
+
+
+
+
+
+
+
+/* Container styles */
+.container-1, .container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tama img, .mali img {
+    object-fit: contain;
+    width: 23vw;
+}
+
+/* Buttons */
+.tama-magpatuloy-button, .mali-magpatuloy-button {
+    all: unset;
+    cursor: pointer;
+}
+
+/* Question and Choices */
+.question-container {
+    font-family: "Roboto Condensed", serif;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    margin-top: 10vw;
+    background-color: white;
+    width: 70vw;
+    height: 25vh;
+    border: 1vw solid #5b1c14;
+    border-radius: 3vw;
+}
+
+.choices-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.choice {
+    flex: 1 1 calc(50% - 20px);
+    margin: 5px;
+    width: 80vw;
+    height: 8vh;
+    border: 3px solid white;
+    text-align: center;
+    line-height: 8vh;
+    font-family: "Roboto Condensed", serif;
+    font-size: 1.5em;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: #212020;
+    color: white;
+    transition: 0.5s ease;
+}
+
+
+.choice:hover{
+    color: black;
+    background-color: #ddba01;
+    border: 4px solid #5b1c14;
+}
+}
