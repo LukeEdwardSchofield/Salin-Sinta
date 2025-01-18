@@ -51,7 +51,7 @@ function startTimer() {
 // Display the next question
 function displayNextQuestion() {
   clearInterval(timer); // Stop any previous timer
-  // startTimer(); // Restart the timer for the new question
+  startTimer(); // Restart the timer for the new question
 
   if (answeredQuestions.length === questions.length) {
     // End of game logic
