@@ -1,25 +1,19 @@
-/* font-family: "Alfa Slab One", serif; */
-/* font-family: "Jersey 10", serif; */
-/* font-family: "Roboto Condensed", serif; */
-/* font-family: "Montserrat", serif; */
-
-
 html, body {
-/* Ensure full height */
+    /* Ensure full height */
     overflow: none; /* Enable scrolling */
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
 }
 
-.bumalik-button{
+.bumalik-button {
     position: absolute;
     left: 0%;
 }
 
-.bumalik{
+.bumalik {
     width: 18vw;
     height: 10vh;
     display: flex;
@@ -29,11 +23,11 @@ body{
     margin-top: 2vh;
     margin-left: 2vw;
     background-color: #ddba01;
-    border: 4px solid black;
-    border-radius: 2vw 0vw 0vw 2vw; 
+    border: 0.4vw solid black;
+    border-radius: vw 0vw 0vw 1vw; 
 }
 
-.bumalik-button p{
+.bumalik-button p {
     position: absolute;
     left: 60%;
     font-family: "Jersey 10", serif;
@@ -42,38 +36,37 @@ body{
     color: #5b1c14;
 }
 
-.bumalik div:nth-child(4){
+.bumalik div:nth-child(4) {
     width: 1vw;
     height: 6vh;
     margin-right: 10vw;
     background-color: #5b1c14;
 }
 
-.bumalik div:nth-child(3){
+.bumalik div:nth-child(3) {
     width: 1vw;
     height: 6vh;
     margin-right: 0.3vw;
     background-color: #5b1c14;
 }
 
-.bumalik div:nth-child(2){
+.bumalik div:nth-child(2) {
     width: 1vw;
     height: 6vh;
     margin-right: 0.3vw;
     background-color: #5b1c14;
 }
 
-.bumalik div:nth-child(1){
+.bumalik div:nth-child(1) {
     height: 8vh;
     margin-right: 0.6vw;
     margin-left: 2vw;
     border-top: 2vw solid transparent; /* Transparent top border */
-    border-right: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+    border-right: 2vw solid #5b1c14;  /* Visible left border forms the triangle */
     border-bottom: 2vw solid transparent; /* Transparent bottom border */
 }
 
-
-.container{
+.container {
     display: flex;
     flex-direction: column;
     margin-top: 15vh;
@@ -84,61 +77,60 @@ body{
     padding: 2vw;
 }
 
-.tagalog-examples{
+.tagalog-examples {
     display: flex;
     flex-direction: column;
 }
 
-.english-examples{
+.english-examples {
     display: none;
     flex-direction: column;
 }
 
-
-.technique{
+.technique {
     font-family: "Alfa Slab One", serif;    
     color: #5b1c14;
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
-.definition{
-    border: 1px solid #5b1c14;
+.definition {
+    border: 0.1vw solid #5b1c14;
     border-radius: 1vw;
     background-color: #fff8d6;
     padding: 2vw;
 }
 
-.definition p{
+.definition p {
     font-family: "Alfa Slab One", serif;    
     color: #5b1c14;
-    font-size: 1vw;
+    font-size: 1.5vw;
 }
 
-.definition li{
+.definition li {
     font-family: "Roboto Condensed", serif;
+    font-size: 1.5vw;
 }
 
-.modals{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-margin-top: 2vh;
-margin-bottom: 2vh;
+.modals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 
-.modals button{
+.modals button {
     width: 30vw;
     height: 5vh;
     font-size: 2vw;
     font-family: "Jersey 10", serif;
-    border: 3px solid #5b1c14;
+    border: 0.3vw solid #5b1c14;
     border-radius: 1vw;
     background-color: #ddba01;
     transition: 0.5s ease;
 }
 
-.modals button:hover{
+.modals button:hover {
     width: 32vw;
     height: 6vh;
 }
-
