@@ -1,7 +1,6 @@
 body{
     display: flex;
     flex-direction: row;
-
 }
 
 /* Overlay to gray out the background */
@@ -88,6 +87,7 @@ body{
     font-size: 3.2vw;
  }
 
+
  .magpatuloy div:nth-child(2){
     width: 2vw;
     height: 5vh;
@@ -135,6 +135,7 @@ body{
 .type, .explanations{
     font-family: "Alfa Slab One", serif;
     color: #5a2805;
+    font-size: 1.5vw;
 }
 
 .type{
@@ -142,6 +143,8 @@ body{
 }
 
 .explanations{
+    font-family: "Roboto Condensed", serif;
+    font-weight: bolder;    
     margin-bottom: 10vh;
 }
 
@@ -207,7 +210,8 @@ body{
     border-radius: 2vw;
     margin-bottom: 2vw;
     margin-top: 10vh;
-    font-size: 1.5vw;
+    font-size: 2vw;
+    text-align: center;
 }
 
 #chosen-container{
@@ -255,10 +259,12 @@ body{
 
 .explanation{
     width: 40vw;
-    height: 8vh;
+    height: 10vh;
     background-color: #212020;
-    font-size: 1vw;
+    font-size: 1.3vw;
     color: white;
+    padding-right: 1vw;
+    padding-left: 1vw;
     margin: 2vh;
     transition: 0.5s ease;
 }
