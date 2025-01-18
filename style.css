@@ -1,5 +1,4 @@
 
-
 /*MAIN MENU*/
 /*-----------------------------------------------------------------------------------------------------------*/
 #main-menu{
@@ -321,6 +320,7 @@ transition: ease 0.5s;
 .maglaro-description{
     font-family: "Roboto Condensed", serif;
     font-size: 30px;
+    text-align: center;
 }
 
 #maglaro-home div p:nth-child(3){
