@@ -124,8 +124,11 @@ body {
     font-size: 8vw;
 }
 
+
+
 .explanations{
     font-family: "Montserrat", serif;
+    font-size: 1.2vw;
     font-weight: 600;
     margin-bottom: 10vh;
 }
@@ -198,7 +201,7 @@ body {
 /* Question and Choices */
 .question-container {
     font-family: "Roboto Condensed", serif;
-    font-size: 20px;
+    font-size: 3vw;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -210,6 +213,7 @@ body {
     height: 25vh;
     border: 1vw solid #5b1c14;
     border-radius: 3vw;
+    text-align: center;
 }
 
 .choices-container {
