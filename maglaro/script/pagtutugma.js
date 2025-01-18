@@ -21,8 +21,8 @@ function toggleModal(modal, show = true) {
 function displayNextQuestion() {
     if (answeredQuestions.length === data.length) {
         questionContainer.innerHTML = `
-            <div>Tapos na ang laro 🎉</div>
-            <div>Ang iyong nakuha ay <strong>${points}</strong> mula sa <strong>${data.length} na tanonog</strong>.</div>
+            <div class = "finished">Tapos na ang laro 🎉</div>
+            <div class = "finished">Ang iyong nakuha ay <strong>${points}</strong> mula sa <strong>${data.length} na tanonog</strong>.</div>
         `;
         choicesContainer.innerHTML = ""; // Clear other containers
         explanationContainer.innerHTML = "";
