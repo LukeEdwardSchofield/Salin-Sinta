@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/pagtutugma.css" />
+    <link rel="stylesheet" href="../../../global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="sub-menu">
+    <a href="../../maglaroHome.html" class="bumalik-button">
+      <div class="bumalik">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <p>BUMALIK</p>
+      </div>
+  </a>
+
+    <div class="overlay"></div>
+
+    <div class="question-container"></div>
+
+    <div class="choices-container"></div>
+
+
+
+    <div class="tama">
+      <div class="container-1">
+        <p id="description-tama">TAMA!!</p>
+        <p id="asdfasdf">Maligayang pagbati!</p>
+
+        <button class="tama-magpatuloy-button">
+          <div class="magpatuloy" id="tama-magpatuloy">
+            <p>MAGPATULOY</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+        </button>
+
+      </div>
+      <img src="../../../asset/img/tama.png" alt="" />
+    </div>
+
+
+
+    <div class="mali">
+      <img src="../../../asset/img/mali.png" alt="" />
+      <div class="container-2">
+        <p id="description-mali">MALI!!</p>
+        <p class="explanations"></p>
+
+        <button class="mali-magpatuloy-button">
+          <div class="magpatuloy" id="mali-magpatuloy">
+            <p>MAGPATULOY</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+    <script>
+    const data = [
+      {
+        question: "Translate: 'Nagbukas ang langit'",
+        choices: [
+          "The heavens opened.",
+          "The sky opened.",
+          "The heavens smiled upon us.",
+          "The sky became clear."
+        ],
+        correctChoice: "The heavens smiled upon us.",
+        explanation: "This translation captures the idiomatic and emotional context of the phrase. While the literal translation ('The heavens opened') is correct, it misses the figurative meaning of an auspicious or favorable event. The best technique here is *modulation*, as the figurative meaning requires adapting to a natural equivalent in English."
+      },
+      {
+        question: "Translate: 'Masarap ang pandesal tuwing umaga'",
+        choices: [
+          "The bread tastes good in the morning.",
+          "Pandesal is delicious in the morning.",
+          "Morning bread is tasty.",
+          "The pandesal every morning is savory."
+        ],
+        correctChoice: "Pandesal is delicious in the morning.",
+        explanation: "The chosen answer preserves the cultural context by retaining the term 'pandesal,' a Filipino bread, and translates the phrase naturally. The best technique is *borrowing*, as 'pandesal' does not have a direct English equivalent and should be retained."
+      },
+      {
+        question: "Translate: 'Napasubo ako sa usapan'",
+        choices: [
+          "I got caught in the conversation.",
+          "I got involved in a tricky discussion.",
+          "I ended up in a heated argument.",
+          "I was forced to participate in the conversation."
+        ],
+        correctChoice: "I got involved in a tricky discussion.",
+        explanation: "This translation accurately conveys the nuance of being unintentionally drawn into a difficult situation. The best technique is *modulation*, as the phrase must be adapted to make sense idiomatically in English without a literal translation."
+      },
+      {
+        question: "Translate: 'Parang pasan ko ang daigdig'",
+        choices: [
+          "It feels like I’m carrying the world on my shoulders.",
+          "It’s like I’m burdened by the Earth.",
+          "I feel like Atlas carrying the globe.",
+          "It seems I have the weight of the world on me."
+        ],
+        correctChoice: "It feels like I’m carrying the world on my shoulders.",
+        explanation: "This idiomatic expression translates well using a common English equivalent. The best technique is *adaptation*, as it ensures that the idiom's figurative meaning is maintained."
+      },
+      {
+        question: "Translate: 'Nakakuha siya ng inspirasyon mula sa nobelang 'Florante at Laura''",
+        choices: [
+          "She got inspiration from the novel 'Florante at Laura.'",
+          "She drew inspiration from the epic 'Florante at Laura.'",
+          "She was inspired by the book 'Florante at Laura.'",
+          "She gained insights from the work 'Florante at Laura.'"
+        ],
+        correctChoice: "She drew inspiration from the epic 'Florante at Laura.'",
+        explanation: "This translation reflects the literary significance of 'Florante at Laura' as an epic poem rather than just a book or novel. The best technique is *explication*, as it provides additional context for the work's cultural and literary status."
+      }
+    ];
+    </script>
+
+    <script src="../../script/pagtutugma.js" defer></script>
+  </body>
+</html>

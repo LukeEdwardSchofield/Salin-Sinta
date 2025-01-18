@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/sitwasyonal.css">
+    <link rel="stylesheet" href="../../../global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="sub-menu">
+
+  <a href="../../maglaroHome.html" class="bumalik-button">
+    <a href="../../maglaroHome.html" class="bumalik-button">
+      <div class="bumalik">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <p>BUMALIK</p>
+      </div>
+  </a>
+  
+    <div class="overlay"></div>
+  
+    <div class="container">
+      <!-- Question -->
+      <div class="question" id="question-container">
+        <!-- Dynamic question text will go here -->
+      </div>
+  
+      <div class="chosen" id="chosen-container">
+          <p class="answer"></p>
+      </div>
+    </div>
+  
+  
+      <!-- Techniques Options -->
+      <div class="techniques" id="techniques-container">
+        <!-- Technique buttons will be dynamically added here -->
+      </div>
+  
+      <!-- Explanations Options -->
+      <div id="explanation-container" style="display: none;">
+        <!-- Explanation buttons will be dynamically added here -->
+      </div>
+  
+      <!-- Next Button -->
+      <button class="next-button" id="next-button">Next Question</button>
+  
+  
+      <div class="tama">
+        <div class="container-1">
+          <p id="description-tama">TAMA!!</p>
+          <p id="asdfasdf">Maligayang pagbati!</p>
+  
+          <button class="tama-magpatuloy-button">
+            <div class="magpatuloy" id="tama-magpatuloy">
+              <p>MAGPATULOY</p>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+  
+        </div>
+        <img src="../../../asset/img/tama.png" alt="" />
+      </div>
+  
+  
+  
+      <div class="mali">
+        <img src="../../../asset/img/mali.png" alt="" />
+        <div class="container-2">
+          <p id="description-mali">MALI!!</p>
+          <p class="type"></p>
+          <p class="explanations"></p>
+  
+          <button class="mali-magpatuloy-button">
+            <div class="magpatuloy" id="mali-magpatuloy">
+              <p>MAGPATULOY</p>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </button>
+  
+        </div>
+      </div>
+
+
+    <script>
+
+const data = [
+  {
+    question: "The road to success is never easy.",
+    techniques: ["Literal Translation", "Adaptation", "Modulation", "Explicating"],
+    correctTechnique: "Adaptation",
+    explanations: [
+      "Adaptation changes the sentence into a more culturally equivalent phrase in Filipino, such as 'Ang daan patungo sa tagumpay ay hindi madali.'",
+      "Literal Translation directly translates the sentence but may sound unnatural in Filipino.",
+      "Modulation focuses on the difficulty of the journey rather than the phrase 'road to success.'",
+      "Explicating would provide more details about what success and its journey mean."
+    ],
+    correctExplanation: "Adaptation changes the sentence into a more culturally equivalent phrase in Filipino, such as 'Ang daan patungo sa tagumpay ay hindi madali.'"
+  },
+  {
+    question: "The stars shone brightly in the night sky.",
+    techniques: ["Literal Translation", "Modulation", "Explicating", "Adaptation"],
+    correctTechnique: "Literal Translation",
+    explanations: [
+      "Literal Translation directly translates the sentence, keeping the meaning intact.",
+      "Modulation shifts the focus to the beauty of the stars rather than their brightness.",
+      "Explicating would explain the imagery of the stars in more detail.",
+      "Adaptation might change the sentence to something more culturally relatable but may lose the direct image."
+    ],
+    correctExplanation: "Literal Translation directly translates the sentence, keeping the meaning intact."
+  },
+  {
+    question: "The early bird catches the worm.",
+    techniques: ["Literal Translation", "Adaptation", "Modulation", "Explicating"],
+    correctTechnique: "Adaptation",
+    explanations: [
+      "Adaptation changes the idiom into a culturally equivalent phrase, such as 'Ang maagap ay may tagumpay.'",
+      "Literal Translation directly translates the phrase but may sound awkward in Filipino.",
+      "Modulation shifts the focus from the bird to the benefit of being early.",
+      "Explicating would explain the idea of waking up early to gain advantage."
+    ],
+    correctExplanation: "Adaptation changes the idiom into a culturally equivalent phrase, such as 'Ang maagap ay may tagumpay.'"
+  },
+  {
+    question: "I felt a sense of relief after finishing the task.",
+    techniques: ["Literal Translation", "Modulation", "Explicating", "Adaptation"],
+    correctTechnique: "Modulation",
+    explanations: [
+      "Modulation shifts the focus to the feeling of relief, making the sentence more natural in Filipino.",
+      "Literal Translation would translate the sentence directly but could sound awkward in Filipino.",
+      "Explicating would provide more detailed descriptions of what 'relief' and 'finishing the task' mean.",
+      "Adaptation might change the sentence into something like 'Masaya ako pagkatapos ng gawain,' losing some of the original meaning."
+    ],
+    correctExplanation: "Modulation shifts the focus to the feeling of relief, making the sentence more natural in Filipino."
+  },
+  {
+    question: "His smile was as bright as the sun.",
+    techniques: ["Literal Translation", "Modulation", "Explicating", "Adaptation"],
+    correctTechnique: "Modulation",
+    explanations: [
+      "Modulation emphasizes the comparison of the smile to brightness, making the sentence clearer.",
+      "Literal Translation translates the sentence word-for-word but may sound unnatural in Filipino.",
+      "Explicating would explain the metaphor of the smile being 'bright like the sun.'",
+      "Adaptation might change the metaphor to a more common Filipino expression, such as 'Ang ngiti niya ay kasing liwanag ng araw.'"
+    ],
+    correctExplanation: "Modulation emphasizes the comparison of the smile to brightness, making the sentence clearer."
+  }
+];
+
+    </script>
+  <script src="../../script/sitwasyonal.js" defer >
+    // JavaScript code to populate content dynamically will go here
+  </script>
+</body>
+</html>

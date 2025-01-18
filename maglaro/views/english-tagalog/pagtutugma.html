@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../../style/pagtutugma.css" />
+    <link rel="stylesheet" href="../../../style/mobile/maglaro/pagtutugma.css">
+    <link rel="stylesheet" href="../../../global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Jersey+10&family=Josefin+Slab:wght@400;600&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="sub-menu">
+    <a href="../../maglaroHome.html" class="bumalik-button">
+      <div class="bumalik">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <p>BUMALIK</p>
+      </div>
+  </a>
+
+    <div class="overlay"></div>
+
+    <div class="question-container"></div>
+
+    <div class="choices-container"></div>
+
+
+
+    <div class="tama">
+      <div class="container-1">
+        <p id="description-tama">TAMA!!</p>
+        <p id="asdfasdf">Maligayang pagbati!</p>
+
+        <button class="tama-magpatuloy-button">
+          <div class="magpatuloy" id="tama-magpatuloy">
+            <p>MAGPATULOY</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+        </button>
+
+      </div>
+      <img src="../../../asset/img/tama.png" alt="" />
+    </div>
+
+
+
+    <div class="mali">
+      <img src="../../../asset/img/mali.png" alt="" />
+      <div class="container-2">
+        <p id="description-mali">MALI!!</p>
+        <p class="explanations"></p>
+
+        <button class="mali-magpatuloy-button">
+          <div class="magpatuloy" id="mali-magpatuloy">
+            <p>MAGPATULOY</p>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </button>
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+const data = [
+  {
+    question: "Translate: 'Actions speak louder than words.'",
+    choices: [
+      "Mas malakas ang gawa kaysa salita.",
+      "Mas mahalaga ang aksyon kaysa salita.",
+      "Mas naririnig ang gawa kaysa salita.",
+      "Ang gawa ay mas maingay kaysa sa mga salita."
+    ],
+    correctChoice: "Mas malakas ang gawa kaysa salita.",
+    explanation: "This translation maintains the idiomatic essence while being concise and natural in Tagalog. The best technique here is *adaptation*, as the idiom needs to be expressed in a way that aligns with cultural understanding."
+  },
+  {
+    question: "Translate: 'A blessing in disguise.'",
+    choices: [
+      "Isang biyayang nakatago.",
+      "Pagpapalang nakabalatkayo.",
+      "Biyaya sa kabila ng pagsubok.",
+      "Biyayang hindi inaasahan."
+    ],
+    correctChoice: "Biyaya sa kabila ng pagsubok.",
+    explanation: "This choice encapsulates the figurative meaning of finding something good in a seemingly bad situation. The best technique is *modulation*, altering the structure to express the intended meaning naturally."
+  },
+  {
+    question: "Translate: 'Don’t bite the hand that feeds you.'",
+    choices: [
+      "Huwag kang manakit sa nagbibigay sa iyo ng kabuhayan.",
+      "Huwag kang mangagat ng kamay na nagbibigay sa iyo ng pagkain.",
+      "Huwag kang magmalupit sa nagbibigay ng tulong sa iyo.",
+      "Huwag kang sumira sa pinagkukunan mo ng kabuhayan."
+    ],
+    correctChoice: "Huwag kang mangagat ng kamay na nagbibigay sa iyo ng pagkain.",
+    explanation: "This translation preserves the imagery and tone of the original idiom. The best technique is *adaptation*, ensuring the figurative message is relatable in Tagalog."
+  },
+  {
+    question: "Translate: 'The grass is always greener on the other side.'",
+    choices: [
+      "Mas lunti ang damo sa kabilang bakod.",
+      "Mas maganda ang buhay sa kabila.",
+      "Mas maganda ang hindi sa iyo.",
+      "Mas lunti ang damo sa hindi mo bakuran."
+    ],
+    correctChoice: "Mas lunti ang damo sa kabilang bakod.",
+    explanation: "This translation keeps the idiomatic expression intact while providing a relatable equivalent. The best technique is *adaptation*, retaining the cultural relevance of the phrase."
+  },
+  {
+    question: "Translate: 'Kill two birds with one stone.'",
+    choices: [
+      "Pumatay ng dalawang ibon gamit ang isang bato.",
+      "Tamaan ang dalawang ibon sa isang bato.",
+      "Masolusyunan ang dalawang problema nang sabay.",
+      "Matapos ang dalawang gawain nang sabay."
+    ],
+    correctChoice: "Tamaan ang dalawang ibon sa isang bato.",
+    explanation: "This choice retains the idiomatic tone and visual metaphor of the original. The best technique is *calque*, where the structure and meaning of the original phrase are preserved in translation."
+  }
+];
+    </script>
+    <script src="../../script/pagtutugma.js" defer></script>
+  </body>
+</html>
