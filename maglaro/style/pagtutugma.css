@@ -33,7 +33,7 @@ body {
     width: 60vw;
     height: 60vh;
     background-color: white;
-    border-radius: 40px;
+    border-radius: 2vw;
     z-index: 20;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
@@ -107,12 +107,12 @@ body {
  }
 
  .magpatuloy div:nth-child(5){
-    height: 8vh;
-    margin: 2px;
+    height: 2vh;
+    margin: 0.5vw;
     
-    border-top: 40px solid transparent; /* Transparent top border */
-    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 40px solid transparent; /* Transparent bottom border */
+    border-top: 2vw solid transparent; /* Transparent top border */
+    border-left: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 2vw solid transparent; /* Transparent bottom border */
 }
 /* -------------------TAMA MODAL------------------------ */
 
@@ -141,35 +141,6 @@ body {
 
 
 
-.magpatuloy div:nth-child(2){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- }
-
- .magpatuloy div:nth-child(3){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- } 
-
- .magpatuloy div:nth-child(4){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- }
-
- .magpatuloy div:nth-child(5){
-    height: 8vh;
-    margin: 2px;
-    
-    border-top: 40px solid transparent; /* Transparent top border */
-    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 40px solid transparent; /* Transparent bottom border */
-}
 
 /* -------------------TAMA MODAL------------------------ */
 
@@ -183,11 +154,16 @@ body {
 .container-1, .container-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
     text-align: center;
 }
 
-.tama img, .mali img {
+.tama img{
+    object-fit: contain;
+    width: 30vw;
+}
+
+.mali img {
     object-fit: contain;
     width: 23vw;
 }
@@ -206,7 +182,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 1vw;
     margin-top: 10vw;
     background-color: white;
     width: 70vw;
@@ -220,19 +196,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 
 .choice {
-    flex: 1 1 calc(50% - 20px);
-    margin: 5px;
+    flex: 1 1 calc(50% - 2vw);
+    margin: 0.3vw;
     width: 80vw;
     height: 8vh;
     border: 3px solid white;
     text-align: center;
     line-height: 8vh;
     font-family: "Roboto Condensed", serif;
-    font-size: 1.5em;
+    font-size: 2vw;
     font-weight: 800;
     cursor: pointer;
     background-color: #212020;
@@ -245,4 +221,9 @@ body {
     color: black;
     background-color: #ddba01;
     border: 4px solid #5b1c14;
+}
+
+
+.finished{
+    font-size: 2vw;
 }
