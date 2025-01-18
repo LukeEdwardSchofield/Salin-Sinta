@@ -1,5 +1,3 @@
-@media (min-width: 801px) {
-    
 
 *{
     margin: 0px;
@@ -103,5 +101,4 @@ width: 8vw;
     border-top: 2vw solid transparent; /* Transparent top border */
     border-right: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
     border-bottom: 2vw solid transparent; /* Transparent bottom border */
-}
 }
