@@ -1,6 +1,7 @@
 body{
     display: flex;
     flex-direction: row;
+
 }
 
 /* Overlay to gray out the background */
@@ -43,7 +44,7 @@ body{
 
 .tama img{
     object-fit: contain;
-    width: 23vw;
+    width: 30vw;
 }
 
 .container-1 p:nth-child(2){
@@ -110,12 +111,12 @@ body{
  }
 
  .magpatuloy div:nth-child(5){
-    height: 8vh;
-    margin: 2px;
+    height: 2vh;
+    margin: 0.5vw;
     
-    border-top: 40px solid transparent; /* Transparent top border */
-    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 40px solid transparent; /* Transparent bottom border */
+    border-top: 2vw solid transparent; /* Transparent top border */
+    border-left: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 2vw solid transparent; /* Transparent bottom border */
 }
 /* -------------------TAMA MODAL------------------------ */
 
@@ -126,6 +127,8 @@ body{
     font-family: "Jersey 10", serif;
     font-size: 8vw;
 }
+
+
 
 .mali img {
     object-fit: contain;
@@ -178,12 +181,12 @@ body{
  }
 
  .magpatuloy div:nth-child(5){
-    height: 8vh;
-    margin: 2px;
+    height: 2vh;
+    margin: 0.5vw;
     
-    border-top: 40px solid transparent; /* Transparent top border */
-    border-left: 40px solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 40px solid transparent; /* Transparent bottom border */
+    border-top: 2vw solid transparent; /* Transparent top border */
+    border-left: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+    border-bottom: 2vw solid transparent; /* Transparent bottom border */
 }
 
 /* -------------------TAMA MODAL------------------------ */
@@ -206,7 +209,7 @@ body{
     width: 40vw;
     height: 30vh;
     background-color: white;
-    border: 10px solid #5a2805;
+    border: 0.5vw solid #5a2805;
     border-radius: 2vw;
     margin-bottom: 2vw;
     margin-top: 10vh;
@@ -224,7 +227,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;    
-    border: 5px solid white;
+    border: 0.4vw solid white;
     border-radius: 1vw;
     background-color: #ddba01;
 }
@@ -240,6 +243,7 @@ body{
     height: 8vh;
     background-color: #212020;
     font-size: 2vw;
+    border: 0.5vw solid white;
     color: white;
     margin: 2vh;
     transition: 0.5s ease;
@@ -262,6 +266,7 @@ body{
     height: 10vh;
     background-color: #212020;
     font-size: 1.3vw;
+    border: 0.5vw solid white;
     color: white;
     padding-right: 1vw;
     padding-left: 1vw;
