@@ -17,7 +17,7 @@ const nextButton = document.querySelector(".magpatuloy");
 
 
 
-let timeLeft = 20;
+let timeLeft = 60;
 let timer = null;
 
 // Toggle modal visibility
@@ -29,7 +29,7 @@ function toggleModal(modal, show = true) {
 // Start and reset the timer
 function startTimer() {
   clearInterval(timer); // Clear any previous timer
-  timeLeft = 20; // Reset timeLeft
+  timeLeft = 60; // Reset timeLeft
   timerElement.textContent = timeLeft;
 
   timer = setInterval(() => {
@@ -39,6 +39,7 @@ function startTimer() {
     if (timeLeft <= 0) {
       clearInterval(timer); // Stop the timer
       inputField.disabled = true;
+      description.className = "times-up";
       description.innerHTML = "TIME'S UP!!";
       doneButton.style.display = "none";
       nextButton.style.display = "flex"; // Show next button
@@ -89,6 +90,8 @@ function displayNextQuestion() {
 function handleAnswer(userInput, correctAnswer, currentQuestion) {
   answeredQuestions.push(currentQuestion); // Mark the question as answered
 
+  clearInterval(timer);
+
   const correctAnswersLowerCase = correctAnswer.map((answer) =>
     answer.trim().toLowerCase()
   );
@@ -107,6 +110,7 @@ function handleAnswer(userInput, correctAnswer, currentQuestion) {
 
   if (answerCorrect) {
     points++; // Increment points
+    
     toggleModal(tamaModal);
     doneButton.style.display = "none";
   } else {
