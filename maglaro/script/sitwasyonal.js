@@ -28,8 +28,8 @@ function toggleModal(modal, show = true) {
 // Display the next question
 function displayNextQuestion() {
   if (answeredQuestions.length === data.length) {
-    questionContainer.style.marginLeft = "25vw";
-    chosenContainer.style.marginLeft = "25vw";
+    questionContainer.style.marginLeft = "0vw";
+    chosenContainer.style.marginLeft = "0vw";
     questionContainer.innerHTML = "<h2>Tapos na ang Laro! 🎉</h2>";
     chosenContainer.innerHTML = `Ang iyong puntos: ${points}`;
     techniquesContainer.innerHTML = "";
@@ -90,7 +90,10 @@ function handleAnswer() {
     toggleModal(maliModal);
     maliType.textContent =
       "Partially Correct! The technique is right but the explanation is wrong.";
-  } else {
+  } else if(explanationIsCorrect){
+    "Partially Correct! The explanation is right but the technique is wrong.";
+  }
+  else {
     toggleModal(maliModal);
     maliType.textContent =
       "Wrong! Both technique and explanation are incorrect.";
