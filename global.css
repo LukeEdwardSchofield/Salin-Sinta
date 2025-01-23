@@ -23,82 +23,166 @@
     object-fit: contain;
 }
 
-.home-button{
-    position: absolute;
-    top: 10px;
-    right: 10px;
+@media (min-width: 801px){
+    .home-button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .home-button img{
+            object-fit: contain;
+        width: 6vw;
+        transition: 0.5s ease;
+    }
+    
+    .home-button img:hover{
+    
+    width: 8vw;
+    }
+    
+    .bumalik-button{
+        position: absolute;
+        left: 0%;
+    }
+    
+    .bumalik{
+        width: 22vw;
+        height: 10vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+        margin-left: 2vw;
+        background-color: #ddba01;
+        border: 0.4vw solid black;
+        border-radius: 2vw 0vw 0vw 2vw; 
+        transition: 0.5s ease;
+    }
+    
+    .bumalik:hover{
+        width: 24vw;
+    }
+    
+    .bumalik-button p{
+        position: absolute;
+        left: 45%;
+        font-family: "Jersey 10", serif;
+        font-size: 4vw;
+        text-align: center;
+        color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(4){
+        width: 1vw;
+        height: 6vh;
+        margin-right: 14vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(3){
+        width: 1vw;
+        height: 6vh;
+        margin-right: 0.3vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(2){
+        width: 1vw;
+        height: 6vh;
+        margin-right: 0.3vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(1){
+        height: 8vh;
+        margin-right: 0.6vw;
+        margin-left: 2vw;
+        border-top: 2vw solid transparent; /* Transparent top border */
+        border-right: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+        border-bottom: 2vw solid transparent; /* Transparent bottom border */
+    }
 }
 
-.home-button img{
-        object-fit: contain;
-    width: 6vw;
-    transition: 0.5s ease;
-}
-
-.home-button img:hover{
-
-width: 8vw;
-}
-
-.bumalik-button{
-    position: absolute;
-    left: 0%;
-}
-
-.bumalik{
-    width: 22vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2vh;
-    margin-left: 2vw;
-    background-color: #ddba01;
-    border: 0.4vw solid black;
-    border-radius: 2vw 0vw 0vw 2vw; 
-    transition: 0.5s ease;
-}
-
-.bumalik:hover{
-    width: 24vw;
-}
-
-.bumalik-button p{
-    position: absolute;
-    left: 45%;
-    font-family: "Jersey 10", serif;
-    font-size: 4vw;
-    text-align: center;
-    color: #5b1c14;
-}
-
-.bumalik div:nth-child(4){
-    width: 1vw;
-    height: 6vh;
-    margin-right: 14vw;
-    background-color: #5b1c14;
-}
-
-.bumalik div:nth-child(3){
-    width: 1vw;
-    height: 6vh;
-    margin-right: 0.3vw;
-    background-color: #5b1c14;
-}
-
-.bumalik div:nth-child(2){
-    width: 1vw;
-    height: 6vh;
-    margin-right: 0.3vw;
-    background-color: #5b1c14;
-}
-
-.bumalik div:nth-child(1){
-    height: 8vh;
-    margin-right: 0.6vw;
-    margin-left: 2vw;
-    border-top: 2vw solid transparent; /* Transparent top border */
-    border-right: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 2vw solid transparent; /* Transparent bottom border */
+@media (max-width: 800px){
+    .home-button{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    
+    .home-button img{
+            object-fit: contain;
+        width: 20vw;
+        transition: 0.5s ease;
+    }
+    
+    .home-button img:hover{
+    
+    width: 8vw;
+    }
+    
+    .bumalik-button{
+        position: absolute;
+        left: 0%;
+    }
+    
+    .bumalik{
+        width: 45vw;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2vh;
+        margin-left: 2vw;
+        background-color: #ddba01;
+        border: 0.4vw solid black;
+        border-radius: 2vw 0vw 0vw 2vw; 
+        transition: 0.5s ease;
+    }
+    
+    .bumalik:hover{
+        width: 24vw;
+    }
+    
+    .bumalik-button p{
+        position: absolute;
+        left: 45%;
+        font-family: "Jersey 10", serif;
+        font-size: 8vw;
+        text-align: center;
+        color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(4){
+        width: 2vw;
+        height: 6vh;
+        margin-right: 25vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(3){
+        width: 2vw;
+        height: 6vh;
+        margin-right: 0.3vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(2){
+        width: 2vw;
+        height: 6vh;
+        margin-right: 0.3vw;
+        background-color: #5b1c14;
+    }
+    
+    .bumalik div:nth-child(1){
+        height: 6vh;
+        margin-right: 0.6vw;
+        margin-left: 2vw;
+        border-top: 6vw solid transparent; /* Transparent top border */
+        border-right: 6vw solid #5b1c14;      /* Visible left border forms the triangle */
+        border-bottom: 6vw solid transparent; /* Transparent bottom border */
+    }
 }
