@@ -66,71 +66,147 @@ body {
     border-bottom: 2vw solid transparent; /* Transparent bottom border */
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15vh;
-    height: auto;
-    width: 80vw;
-    background-color: white;
-    border-radius: 0.8vw;
-    padding: 2vw;
+/* -------------------------------MAIN MENU--------------------------------------- */
+/* main desktop */
+@media (min-width: 801px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        height: auto;
+        width: 80vw;
+        background-color: white;
+        border-radius: 0.8vw;
+        padding: 2vw;
+    }
+
+    .tagalog-examples {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .english-examples {
+        display: none;
+        flex-direction: column;
+    }
+
+    .technique {
+        font-family: "Alfa Slab One", serif;    
+        color: #5b1c14;
+        font-size:7vw;
+    }
+
+    .definition {
+        border: 0.1vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #fff8d6;
+        padding: 2vw;
+    }
+
+    .definition p {
+        font-family: "Alfa Slab One", serif;    
+        color: #5b1c14;
+        font-size: 1.5vw;
+    }
+
+    .definition li {
+        font-family: "Roboto Condensed", serif;
+        font-size: 1.5vw;
+    }
+
+    .modals {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .modals button {
+        width: 30vw;
+        height: 5vh;
+        font-size: 2vw;
+        font-family: "Jersey 10", serif;
+        border: 0.3vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #ddba01;
+        transition: 0.5s ease;
+    }
+
+    .modals button:hover {
+        width: 32vw;
+        height: 6vh;
+    }
 }
 
-.tagalog-examples {
-    display: flex;
-    flex-direction: column;
-}
+/* main phone */
+@media (max-width: 800px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15vh;
+        height: auto;
+        width: 90vw;
+        background-color: white;
+        border-radius: 0.8vw;
+        padding: 2vw;
+    }
 
-.english-examples {
-    display: none;
-    flex-direction: column;
-}
+    .tagalog-examples {
+        display: flex;
+        flex-direction: column;
+    }
 
-.technique {
-    font-family: "Alfa Slab One", serif;    
-    color: #5b1c14;
-    font-size: 3vw;
-}
+    .english-examples {
+        display: none;
+        flex-direction: column;
+    }
 
-.definition {
-    border: 0.1vw solid #5b1c14;
-    border-radius: 1vw;
-    background-color: #fff8d6;
-    padding: 2vw;
-}
+    .technique {
+        font-family: "Alfa Slab One", serif;    
+        color: #5b1c14;
+        font-size:7vw;
+    }
 
-.definition p {
-    font-family: "Alfa Slab One", serif;    
-    color: #5b1c14;
-    font-size: 1.5vw;
-}
+    .definition {
+        border: 0.1vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #fff8d6;
+        padding: 2vw;
+    }
 
-.definition li {
-    font-family: "Roboto Condensed", serif;
-    font-size: 1.5vw;
-}
+    .definition p {
+        font-family: "Alfa Slab One", serif;    
+        color: #5b1c14;
+        font-size: 5vw;
+    }
 
-.modals {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
+    .definition li {
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+    }
 
-.modals button {
-    width: 30vw;
-    height: 5vh;
-    font-size: 2vw;
-    font-family: "Jersey 10", serif;
-    border: 0.3vw solid #5b1c14;
-    border-radius: 1vw;
-    background-color: #ddba01;
-    transition: 0.5s ease;
-}
+    .modals {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
 
-.modals button:hover {
-    width: 32vw;
-    height: 6vh;
+    .modals button {
+        width: 30vw;
+        height: 5vh;
+        font-size: 5vw;
+        font-family: "Jersey 10", serif;
+        border: 0.3vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #ddba01;
+        transition: 0.5s ease;
+    }
+
+    .modals button:hover {
+        width: 32vw;
+        height: 6vh;
+    }
 }
