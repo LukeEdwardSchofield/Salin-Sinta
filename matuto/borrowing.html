@@ -22,7 +22,8 @@
 
 
 <style>
-.tagalog-examples{
+    @media (min-width: 701px){
+        .tagalog-examples{
     border: 1px solid #5b1c14;
     border-radius: 1vw;
     background-color: #fff8d6;
@@ -41,7 +42,8 @@
     margin-bottom: 2vh;
 }
 
-.tagalog-example p:nth-child(2){
+.tagalog-example p:nth-child(2),
+.tagalog-example p:nth-child(3){
     font-family: "Roboto Condensed", serif;
     font-size: 1.5vw;
 }
@@ -54,7 +56,7 @@
 }
 
 .english-example{
-    margin: 1.5vw;
+    margin: 1vw;
 }
 
 .english-example p:nth-child(1){
@@ -65,12 +67,67 @@
     margin-bottom: 2vh;
 }
 
-.english-example p:nth-child(2){
+.english-example p:nth-child(2),
+.english-example p:nth-child(3){
     font-family: "Roboto Condensed", serif;
     font-size: 1.5vw;
+    }
 }
 
-    
+    @media (max-width: 700px){
+    .tagalog-examples{
+    border: 0.1vw solid #5b1c14;
+    border-radius: 1vw;
+    background-color: #fff8d6;
+    padding: 2vw;
+}
+
+    .tagalog-example{
+        margin: 4vw;
+    }
+
+    .tagalog-example p:nth-child(1){
+        font-family: "Roboto Condensed", serif;
+        font-weight: 700;
+        font-size: 6vw;
+        color: #cc990d;
+        margin-bottom: 2vh;
+    }
+
+    .tagalog-example p:nth-child(2),
+    .tagalog-example p:nth-child(3){
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+    }
+
+
+    .english-examples{
+        border: 0.1vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #fff8d6;
+        padding: 2vw;
+    }
+
+    .english-example{
+        margin: 4vw;
+    }
+
+    .english-example p:nth-child(1){
+        font-family: "Roboto Condensed", serif;
+        font-weight: 700;
+        font-size: 5vw;
+        color: #5b1c14;
+        margin-bottom: 2vh;
+    }
+
+    .english-example p:nth-child(2),
+    .english-example p:nth-child(3){
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+    }
+
+}
+ 
 </style>
 <body class="sub-menu">
 
@@ -119,12 +176,13 @@
                 <p>Ginagamit pa rin bilang mano, na tumutukoy sa tradisyonal na pagbibigay-galang sa mga nakatatanda sa pamamagitan ng pagdapo ng kamay sa noo.</p>
             </div>
             <div class="tagalog-example">
-                <p>"TARSIER"</p>
-                <p>Ginagamit bilang tarsier sa Ingles, na tumutukoy sa maliit na primado na matatagpuan sa Pilipinas.</p>
+                <p>"BAYANIHAN"</p>
+                <p>Hiniram dahil inilalarawan nito ang isang natatanging konseptong Pilipino ng diwa ng pagtutulungan at pagkakaisa sa komunidad na walang direktang katumbas na salita sa Ingles.
+                </p>
             </div>
             <div class="tagalog-example">
-                <p>"PALENGKE"</p>
-                <P>Direktang isinalin bilang palengke sa Ingles, na nangangahulugang tradisyonal na pamilihan.</P>
+                <p>"MABUHAY"</p>
+                <P>Hiniram dahil ito ay isang natatanging ekspresyong Pilipino ng pagbati.</P>
             </div>
             <div class="tagalog-example">
                 <p>"PANDESAL"</p>
@@ -137,7 +195,7 @@
             </div>
             <div class="tagalog-example">
                 <p>"SARI-SARI STORE"</p>
-                <p>Retain sa Ingles bilang sari-sari store, na tumutukoy sa maliit na tindahang pangkomunidad.</p>
+                <p>Pinanatili sa Ingles bilang sari-sari store, na tumutukoy sa maliit na tindahang pangkomunidad.</p>
             </div>
             <div class="tagalog-example">
                 <p>"BARONG"</p>
