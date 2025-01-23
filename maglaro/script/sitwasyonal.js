@@ -91,6 +91,7 @@ function handleAnswer() {
     maliType.textContent =
       "Partially Correct! The technique is right but the explanation is wrong.";
   } else if(explanationIsCorrect){
+    toggleModal(maliModal);
     "Partially Correct! The explanation is right but the technique is wrong.";
   }
   else {
