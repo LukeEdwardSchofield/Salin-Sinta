@@ -19,130 +19,462 @@ body {
     z-index: 10;
 }
 
-.tama, .mali {
-    display: none;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    overflow: visible;
-    padding: 2vw;
-    width: 60vw;
-    height: 60vh;
-    background-color: white;
-    border-radius: 2vw;
-    z-index: 20;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+/* Container styles */
+
+/* --------------------MAIN---------------------- */
+/* MAIN DESKTOP */
+@media (min-width: 801px){
+    .container-1, .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    /* Buttons */
+    .tama-magpatuloy-button, .mali-magpatuloy-button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    /* Question and Choices */
+    .question-container {
+        font-family: "Roboto Condensed", serif;
+        font-size: 3vw;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1vw;
+        margin-top: 10vw;
+        background-color: white;
+        width: 70vw;
+        height: 25vh;
+        border: 1vw solid #5b1c14;
+        border-radius: 3vw;
+        text-align: center;
+    }
+
+    .choices-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .choice {
+        flex: 1 1 calc(50% - 2vw);
+        margin: 0.3vw;
+        width: 80vw;
+        height: 8vh;
+        border: 3px solid white;
+        text-align: center;
+        line-height: 8vh;
+        font-family: "Roboto Condensed", serif;
+        font-size: 2vw;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: #212020;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+
+    .choice:hover{
+        color: black;
+        background-color: #ddba01;
+        border: 0.4vw solid #5b1c14;
+    }
+
+
+    .finished{
+        font-size: 2vw;
+    }
+
+    .tama, .mali {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        overflow: visible;
+        padding: 2vw;
+        width: 60vw;
+        height: 60vh;
+        background-color: white;
+        border-radius: 2vw;
+        z-index: 20;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .magpatuloy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 22vw;
+        height: 10vh;
+        background-color: #ddba01;
+        border-radius: 0vw 2vw 2vw 0vw;
+        transition: 0.5s ease;
+    }
+
+    .magpatuloy:hover{
+        width: 24vw;
+    }
+
+
+    .magpatuloy p{
+        font-family: "Jersey 10", serif;
+        font-size: 3.2vw;
+    }
+
+    .magpatuloy div:nth-child(2){
+        width: 2vw;
+        height: 5vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    }
+
+    .magpatuloy div:nth-child(3){
+        width: 2vw;
+        height: 5vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    } 
+
+    .magpatuloy div:nth-child(4){
+        width: 2vw;
+        height: 5vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    }
+
+    .magpatuloy div:nth-child(5){
+        height: 2vh;
+        margin: 0.5vw;
+        
+        border-top: 2vw solid transparent; /* Transparent top border */
+        border-left: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
+        border-bottom: 2vw solid transparent; /* Transparent bottom border */
+    }
 }
+
+/* main phone */
+@media (max-width: 800px){
+    .container-1, .container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    /* Buttons */
+    .tama-magpatuloy-button, .mali-magpatuloy-button {
+        all: unset;
+        cursor: pointer;
+    }
+
+    .question-container {
+        display: flex;
+        flex-direction: column;
+        font-family: "Roboto Condensed", serif;
+        font-size: 7vw;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1vw;
+        margin-top: 30vw;
+        background-color: white;
+        width: 90vw;
+        height: 25vh;
+        border: 1vw solid #5b1c14;
+        border-radius: 3vw;
+        text-align: center;
+    }
+
+    .choices-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 1vh;
+    }
+
+    .choice {
+        flex: 1 1 calc(50% - 2vw);
+        margin: 0.3vw;
+        width: 90vw;
+        height: 7vh;
+        border: 1vw solid white;
+        text-align: center;
+        line-height: 8vh;
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: #212020;
+        color: white;
+        transition: 0.5s ease;
+    }
+
+    .choice:hover{
+        color: black;
+        background-color: #ddba01;
+        border: 1vw solid #5b1c14;
+    }
+
+    .finished{
+        font-size: 5vw;
+    }
+        .tama, .mali {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        overflow: visible;
+        padding: 2vw;
+        width: 80vw;
+        height: 30vh;
+        background-color: white;
+        border-radius: 2vw;
+        z-index: 20;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .magpatuloy{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 22vw;
+        height: 10vh;
+        background-color: #ddba01;
+        border-radius: 0vw 2vw 2vw 0vw;
+        transition: 0.5s ease;
+    }
+
+    .magpatuloy:hover{
+        width: 24vw;
+    }
+
+
+    .magpatuloy p{
+        font-family: "Jersey 10", serif;
+        margin-left: 4vw;
+        margin-right: 4vw;
+        font-size: 10vw;
+    }
+
+    .magpatuloy div:nth-child(2){
+        width: 2vw;
+        height: 8vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    }
+
+    .magpatuloy div:nth-child(3){
+        width: 2vw;
+        height: 8vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    } 
+
+    .magpatuloy div:nth-child(4){
+        width: 2vw;
+        height: 8vh;
+        background-color: #5b1c14;
+        margin: 0.3vw;
+    }
+
+    .magpatuloy div:nth-child(5){
+        height: 2vh;
+        margin: 0.5vw;
+        
+        border-top: 8vw solid transparent; /* Transparent top border */
+        border-left: 8vw solid #5b1c14;      /* Visible left border forms the triangle */
+        border-bottom: 8vw solid transparent; /* Transparent bottom border */
+    }
+
+    /* not finished yet */
+}
+
 
 /* -------------------TAMA MODAL------------------------ */
-#description-tama{
-    font-family: "Jersey 10", serif;
-    font-size: 8vw;
-    color: black;
-}
+/* TAMA DESKTOP */
+@media (min-width: 801px){
+    #description-tama{
+        font-family: "Jersey 10", serif;
+        font-size: 8vw;
+        color: black;
+    }
 
-.container-1 p:nth-child(2){
-    font-family: "Jersey 10", serif;
-    font-size: 3vw; 
-    margin-bottom: 10vh;
-}
+    .container-1 p:nth-child(2){
+        font-family: "Jersey 10", serif;
+        font-size: 3vw; 
+        margin-bottom: 10vh;
+    }
 
-#tama-magpatuloy{
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    width: 22vw;
-    height: 12vh;
-    transition: 0.5s ease;
-}
+    #tama-magpatuloy{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        width: 22vw;
+        height: 12vh;
+        transition: 0.5s ease;
+    }
 
-#tama-magpatuloy:hover{
-    width: 24vw;
-}
-
-.magpatuloy{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 22vw;
-    height: 10vh;
-    background-color: #ddba01;
-    border-radius: 0vw 2vw 2vw 0vw;
-    transition: 0.5s ease;
-}
-
-.magpatuloy:hover{
-    width: 24vw;
-}
-
-
- .magpatuloy p{
-    font-family: "Jersey 10", serif;
-    font-size: 3.2vw;
- }
-
- .magpatuloy div:nth-child(2){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- }
-
- .magpatuloy div:nth-child(3){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- } 
-
- .magpatuloy div:nth-child(4){
-    width: 2vw;
-    height: 5vh;
-    background-color: #5b1c14;
-    margin: 0.3vw;
- }
-
- .magpatuloy div:nth-child(5){
-    height: 2vh;
-    margin: 0.5vw;
+    #tama-magpatuloy:hover{
+        width: 24vw;
+    }
     
-    border-top: 2vw solid transparent; /* Transparent top border */
-    border-left: 2vw solid #5b1c14;      /* Visible left border forms the triangle */
-    border-bottom: 2vw solid transparent; /* Transparent bottom border */
+    .tama-magpatuloy-button{
+        all: unset;
+        cursor: pointer;
+    }
+
+    .tama img{
+        object-fit: contain;
+        width: 30vw;
+    }
 }
-/* -------------------TAMA MODAL------------------------ */
+
+/* TAMA PHONE */
+@media (max-width: 800px){
+    #description-tama{
+        font-family: "Jersey 10", serif;
+        font-size: 15vw;
+        color: black;
+        margin-bottom: 4vh;
+        margin-top: 3vh;
+    }
+
+    .container-1 p:nth-child(2){
+        font-family: "Jersey 10", serif;
+        font-size: 6vw; 
+        margin-bottom: 10vh;
+    }
+
+    #tama-magpatuloy{
+        position: absolute;
+        bottom: -40%;
+        left: 5%;
+        width: 72vw;
+        height: 10vh;
+        transition: 0.5s ease;
+        border: 1vw solid black;
+    }
+
+    #tama-magpatuloy:hover{
+        width: 24vw;
+    }
+
+    .tama-magpatuloy-button{
+        all: unset;
+        cursor: pointer;
+    }
+
+    .tama img{
+        object-fit: contain;
+        width: 40vw;
+    }
+}
+/* ------------------------------------------- */
+
 
 
 /* -------------------MALI MODAL------------------------ */
+/* MALI DESKTOP */
+@media (min-width: 801px){
+    #description-mali{
+        font-family: "Jersey 10", serif;
+        font-size: 8vw;
+    }
 
-#description-mali{
-    font-family: "Jersey 10", serif;
-    font-size: 8vw;
+    .explanations{
+        font-family: "Montserrat", serif;
+        font-size: 1.2vw;
+        font-weight: 600;
+        margin-bottom: 10vh;
+    }
+
+    #mali-magpatuloy{
+        position: absolute;
+        right: 12%;
+        bottom: 5%;
+    }
+
+    .mali img {
+        object-fit: contain;
+        width: 23vw;
+    }
+
+    .mali-magpatuloy-button {
+        all: unset;
+        cursor: pointer;
+    }
 }
 
+/* MALI PHONE */
+@media (max-width: 800px){
+   .mali {
+        display: none;
+        position: fixed;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+        overflow: visible;
+        padding: 2vw;
+        width: 80vw;
+        height: 33vh;
+        background-color: white;
+        border-radius: 2vw;
+        z-index: 20;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    }
 
+    #description-mali{
+        font-family: "Jersey 10", serif;
+        font-size: 14vw;
+        margin-top: 8vh;
+    }
 
-.explanations{
-    font-family: "Montserrat", serif;
-    font-size: 1.2vw;
-    font-weight: 600;
-    margin-bottom: 10vh;
+    .explanations{
+        font-family: "Montserrat", serif;
+        font-size: 3vw;
+        font-weight: 800;
+        margin-bottom: 10vh;
+    }
+
+    #mali-magpatuloy{
+        position: absolute;
+        bottom: -35%;
+        left: 5%;
+        width: 72vw;
+        height: 10vh;
+        transition: 0.5s ease;
+        border: 1vw solid black;
+    }
+
+    .mali img {
+        object-fit: contain;
+        width: 30vw;
+    }
+
+    .mali-magpatuloy-button {
+        all: unset;
+        cursor: pointer;
+    }
 }
-
-#mali-magpatuloy{
-    position: absolute;
-    right: 12%;
-    bottom: 5%;
-}
-
-
-
-
-/* -------------------TAMA MODAL------------------------ */
+/* ------------------------------------------- */
 
 
 
@@ -150,80 +482,3 @@ body {
 
 
 
-/* Container styles */
-.container-1, .container-2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;
-}
-
-.tama img{
-    object-fit: contain;
-    width: 30vw;
-}
-
-.mali img {
-    object-fit: contain;
-    width: 23vw;
-}
-
-/* Buttons */
-.tama-magpatuloy-button, .mali-magpatuloy-button {
-    all: unset;
-    cursor: pointer;
-}
-
-/* Question and Choices */
-.question-container {
-    font-family: "Roboto Condensed", serif;
-    font-size: 3vw;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1vw;
-    margin-top: 10vw;
-    background-color: white;
-    width: 70vw;
-    height: 25vh;
-    border: 1vw solid #5b1c14;
-    border-radius: 3vw;
-    text-align: center;
-}
-
-.choices-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1vh;
-}
-
-.choice {
-    flex: 1 1 calc(50% - 2vw);
-    margin: 0.3vw;
-    width: 80vw;
-    height: 8vh;
-    border: 3px solid white;
-    text-align: center;
-    line-height: 8vh;
-    font-family: "Roboto Condensed", serif;
-    font-size: 2vw;
-    font-weight: 800;
-    cursor: pointer;
-    background-color: #212020;
-    color: white;
-    transition: 0.5s ease;
-}
-
-
-.choice:hover{
-    color: black;
-    background-color: #ddba01;
-    border: 4px solid #5b1c14;
-}
-
-
-.finished{
-    font-size: 2vw;
-}
