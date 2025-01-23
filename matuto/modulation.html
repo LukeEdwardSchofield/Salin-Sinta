@@ -21,7 +21,8 @@
       </head>
 
 <style>
-.tagalog-examples{
+    @media (min-width: 701px){
+        .tagalog-examples{
     border: 1px solid #5b1c14;
     border-radius: 1vw;
     background-color: #fff8d6;
@@ -69,6 +70,61 @@
 .english-example p:nth-child(3){
     font-family: "Roboto Condensed", serif;
     font-size: 1.5vw;
+    }
+}
+
+    @media (max-width: 700px){
+    .tagalog-examples{
+    border: 0.1vw solid #5b1c14;
+    border-radius: 1vw;
+    background-color: #fff8d6;
+    padding: 2vw;
+}
+
+    .tagalog-example{
+        margin: 4vw;
+    }
+
+    .tagalog-example p:nth-child(1){
+        font-family: "Roboto Condensed", serif;
+        font-weight: 700;
+        font-size: 6vw;
+        color: #cc990d;
+        margin-bottom: 2vh;
+    }
+
+    .tagalog-example p:nth-child(2),
+    .tagalog-example p:nth-child(3){
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+    }
+
+
+    .english-examples{
+        border: 0.1vw solid #5b1c14;
+        border-radius: 1vw;
+        background-color: #fff8d6;
+        padding: 2vw;
+    }
+
+    .english-example{
+        margin: 4vw;
+    }
+
+    .english-example p:nth-child(1){
+        font-family: "Roboto Condensed", serif;
+        font-weight: 700;
+        font-size: 5vw;
+        color: #5b1c14;
+        margin-bottom: 2vh;
+    }
+
+    .english-example p:nth-child(2),
+    .english-example p:nth-child(3){
+        font-family: "Roboto Condensed", serif;
+        font-size: 4vw;
+    }
+
 }
 </style>
 <body class="sub-menu">
@@ -89,7 +145,9 @@
     
         <div class="definition">
             <p>DEFINITION</p>
-            <li>Tumutukoy ang MODLUATION sa pagbabago ng pananaw o perspektiba upang maipahayag ang parehong ideya sa mas angkop na paraan</li>
+            <li>Tumutukoy ang MODULATION sa pagbabago ng pananaw o perspektiba upang maipahayag ang parehong ideya sa mas angkop na paraan</li>
+            <p>PURPOSE</p>
+            <li>Maiwasan ang pagiging literal na maaaring magdulot ng pagiging awkward o hindi malinaw ng pagsasalin.</li>
         </div>
     
         <div class="modals">
@@ -104,9 +162,9 @@
                 <p>(Direktang salin tulad ng "Hindi ko magawa ang kahit ano" ay hindi natural pakinggan.)</p>
             </div>
             <div class="tagalog-example">
-                <p>"Nagbukas ang langit."</p>
-                <p>Modulated Translation: "The heavens smiled upon us."</p>
-                <p>(Sa halip na "Nagbukas ang kalangitan," ito ay nagpapakita ng mas malalim na kahulugan.)</p>
+                <p>"Madali lang ito."</p>
+                <p>Modulated Translation: "This is a breeze."</p>
+                <p>(Sa halip na "This is easy" na nagpapakita na mas madali ang gawain.)</p>
             </div>
             <div class="tagalog-example">
                 <p>"Anong silbi nito?"</p>
@@ -119,14 +177,14 @@
                 <p>(Ang literal na "Iba ang kanyang pagdating" ay mawawala ang kultural na kahulugan.)</p>
             </div>
             <div class="tagalog-example">
-                <p>Original: "Parang pasan ko ang daigdig."</p>
-                <p>Modulated Translation: "It feels like the weight of the world is on my shoulders."</p>
-                <p>(Ang direktang salin ay mawawala ang idiomatikong lalim.)</p>
+                <p>"Medyo mainit ang ulo niya."</p>
+                <p>Modulated Translation: "She has a unique aura."</p>
+                <p>(Ang literal na "Iba ang kanyang pagdating" ay mawawala ang totoong kahulugan.)</p>
             </div>
             <div class="tagalog-example">
-                <p>"Ang buhay ay parang gulong."</p>
-                <P>Modulated Translation: "Life has its ups and downs."</P>
-                <p>(Ang direktang salin tulad ng "Life is like a wheel" ay hindi nagdadala ng parehong kahulugan.)</p>
+                <p>"Hindi ko maintindihan."</p>
+                <P>Modulated Translation: "I’m having trouble understanding."</P>
+                <p>(Pinalumanay ang salita na nagsasabing “nahihirapan akong maunawaan”.)</p>
             </div>
             <div class="tagalog-example">
                 <p>"Mabilis ang panahon kapag kasama ka."</p>
@@ -152,9 +210,9 @@
     
         <div class="english-examples">
             <div class="english-example">
-                <p>"It’s raining cats and dogs."</p>
-                <p>Modulated Translation: "Ang lakas ng ulan."</p>
-                <p>(Ang literal na salin ay nakakalito para sa mga Pilipino.)</p>
+                <p>"He's very patient."</p>
+                <p>Modulated Translation: "Mapagpasensiya siya."</p>
+                <p>(Binago ang paglalarawan mula sa "malaki ang pasensya" tungo sa mas direktang katumbas na "mapagpasensya" na nagbibigay-diin sa katangian.)</p>
             </div>
             <div class="english-example">
                 <p>"Time flies when you’re having fun."</p>
@@ -162,9 +220,9 @@
                 <p>(Ang direktang pagsasalin ng "Time flies" ay magiging malabo.)</p>
             </div>
             <div class="english-example">
-                <p>"She’s walking on thin ice."</p>
+                <p>"I’m sure she’ll succeed."</p>
                 <p>Modulated Translation: "Nasa alanganin siya."</p>
-                <p>(Iniiwasan ang literal na "Manipis na yelo ang nilalakad niya.")</p>
+                <p>(Binago ang ekspresyon upang mas mahusay na maipahayag ang antas ng pagtitiyak)</p>
             </div>
             <div class="english-example">
                 <p>"He has a lot on his plate."</p>
@@ -172,9 +230,9 @@
                 <p>(Ang direktang salin ng "plate" ay malilito ang kahulugan.)</p>
             </div>
             <div class="english-example">
-                <p>"Don’t cry over spilled milk."</p>
-                <p>Modulated Translation: "Huwag nang umiyak sa wala nang magagawa."</p>
-                <p>(Pinanatili ang idiomatikong kahulugan sa paraan ng pagsasalin.)</p>
+                <p>"She’s very beautiful."</p>
+                <p>Modulated Translation: "Napakaganda niya."</p>
+                <p>(Binago ang pagkakasunod-sunod ng mga salita upang mas magkaroon ng natural na daloy sa tagalog.)</p>
             </div>
             <div class="english-example">
                 <p>"Actions speak louder than words."</p>
@@ -187,18 +245,18 @@
                 <p>(Iniaangkop ang ideya sa natural na konteksto ng Tagalog.)</p>
             </div>
             <div class="english-example">
-                <p>"Burning the midnight oil."</p>
-                <p>Modulated Translation: "Nagpupuyat sa trabaho o pag-aaral."</p>
-                <p>(Iningatan ang idiomatikong kahulugan sa pagsasalin.)</p>
+                <p>"He’s very kind"</p>
+                <p>Modulated Translation: "Mabait siya."</p>
+                <p>(Inilipat ang paglalarawan ng katangian tungo sa mas direktang “mabait” na mas karaniwan at mas madaling maunawaan sa tagalog.)</p>
             </div>
             <div class="english-example">
-                <p>"The ball is in your court."</p>
-                <p>Modulated Translation: "Nasa iyong mga kamay ang desisyon."</p>
-                <p>(Idiomatikong inangkop para sa malinaw na kahulugan.)</p>
+                <p>"I forgot my umbrella."</p>
+                <p>Modulated Translation: "Naiwan ko ang payong ko."</p>
+                <p>(Ginamit ang "Naiwan ko" sa halip na direktang isalin ang "I forgot" upang mas mahusay na maipahayag ang aksyon ng pag-iwan ng isang bagay sa Tagalog.)</p>
             </div>
             <div class="english-example">
-                <p>"Curiosity killed the cat."</p>
-                <p>Modulated Translation: "Ang labis na pagkamausisa ay nagdadala ng kapahamakan."</p>
+                <p>"She is very tired."</p>
+                <p>Modulated Translation: "Pagod siya."</p>
                 <p>(Ipinaliwanag ang mensahe kaysa sa literal na pagsasalin.)</p>
             </div>
         </div>
